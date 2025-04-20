@@ -1,0 +1,56 @@
+/* === hero-message.css === */
+
+/* Versión de escritorio (sin cambios) */
+.hero-message {
+    position: absolute;
+    bottom: 40px;
+    left: 25%;
+    transform: translateX(-50%);
+    background-color: rgba(139, 0, 0, 0.6); /* Rojo con transparencia */
+    color: white;
+    padding: 2rem;          /* Valor original para web */
+    border-radius: 12px;
+    z-index: 10;
+    max-width: 300px;      /* Valor original para web */
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-message h2 {
+    margin-bottom: 1rem;    /* Valor original para web */
+    font-size: 1.8rem;      /* Valor original para web */
+}
+
+.hero-message p {
+    font-size: 1rem;        /* Valor original para web */
+    line-height: 1.5;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 1.5rem;      
+    padding: 5px 10px;      
+    background-color: darkgrey; /* Color verde moderno */
+    color: white;              /* Color del texto */
+    text-decoration: none;
+    border: none;              /* Sin borde */
+    border-radius: 50px;      /* Bordes redondeados */
+    font-weight: none;
+    font-size: 1rem;          /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.hero-button:hover {
+    background-color: darkred; /* Color más oscuro al pasar el mouse */
+    transform: translateY(0.1px); /* Efecto de elevación */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* === Solo para móviles (≤600px) === */
+@media (max-width: 600px) {
+    .hero-message {
+        display: none; /* Oculta el hero en móviles */
+    }
+}
