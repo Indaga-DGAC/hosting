@@ -1,0 +1,45 @@
+/* hamburger.css */
+
+.hamburger {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  display: block;
+  z-index: 1100;
+}
+
+/* Sidebar oculto por defecto */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+/* Enlaces dentro del sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Clase para mostrar el sidebar (se usará con JS más adelante) */
+.sidebar.active {
+  left: 0;
+}
