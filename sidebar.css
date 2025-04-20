@@ -1,0 +1,53 @@
+/* Capa oscura que cubre el fondo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Para estar por debajo del sidebar */
+    opacity: 0; /* Inicialmente oculta */
+    pointer-events: none; /* Impide que el overlay bloquee el clic en otros elementos cuando no está activo */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1; /* Cuando está activo, es visible */
+    pointer-events: auto; /* Permite que el overlay reciba clics cuando está activo */
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Desplazado fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1001; /* Aseguramos que esté por encima del overlay */
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar.active {
+    left: 0; /* Cuando está activo, se muestra en la pantalla */
+}
+
+/* Estilo de los enlaces dentro del sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar li a:hover {
+    background-color: #555;
+}
