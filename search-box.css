@@ -1,0 +1,47 @@
+/* Estilos para el cuadro de búsqueda */
+.search-box {
+  width: 100%;
+  max-width: 600px;  /* Tamaño máximo */
+  margin: 20px auto;  /* Centrado horizontal */
+  background-color: rgba(255, 255, 255, 0.1);  /* Fondo con ligera transparencia */
+  padding: 20px;
+  border-radius: 10px;  /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  text-align: center;
+  backdrop-filter: blur(5px);  /* Difuminado sutil de fondo */
+}
+
+/* Título encima del cuadro de búsqueda */
+.search-box-title {
+  font-size: 24px;
+  color: black;  /* Texto blanco */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Descripción debajo del cuadro de búsqueda */
+.search-box-description {
+  font-size: 14px;
+  color: black;  /* Texto gris */
+  margin-top: 10px;
+}
+
+/* Estilo del campo de entrada de texto */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al enfocarse (focus) */
+.search-input:focus {
+  background-color: #f0f0f0;  /* Fondo ligeramente gris al hacer focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);  /* Sombra para resaltar */
+  border: 1px solid #4CAF50;  /* Resaltar con borde verde */
+}
