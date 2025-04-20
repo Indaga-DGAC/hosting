@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observatorio Nacional de Política Criminal</title>
+  <!-- Enlaza tus estilos -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/carrusel.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/hero-message.css">
+  <link rel="stylesheet" href="css/cajas.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/barraAlta.css">
+  <link rel="stylesheet" href="css/search-box.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Barra superior con el nombre de la dirección y redes sociales -->
+  <div class="barraAlta">
+    <!-- Título de la dirección -->
+    <span>Dirección General de Asuntos Criminológicos</span>
+
+    <!-- Espaciado entre el texto y los iconos -->
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
+    <!-- Enlaces a las redes sociales -->
+    <a href="https://facebook.com" target="_blank" class="icono-facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="icono-twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="icono-instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="icono-linkedin">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <!-- Contenedor de la barra de búsqueda -->
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." class="search-input">
+      <button class="search-button">🔍</button>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Barra de navegación superior -->
+  <header class="navbar">
+    <div class="hamburger" id="hamburger">☰</div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Publicaciones</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Data</a></li>
+      </ul>
+    </nav>
+    <!-- Sidebar (oculto por defecto, se activa desde tu JavaScript) -->
+    <aside class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </aside>
+  </header>
+
+  <!-- Logo principal -->
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo del Observatorio" class="logo-img">
+  </div>
+
+  <!-- Carrusel -->
+  <section class="carousel">
+    <div class="carousel-container">
+
+  <!-- Hero Message superpuesto -->
+    <div class="hero-message">
+      <h1>Observatorio Nacional de Política Criminal</h1>
+      <p>Investigación, análisis y políticas para un país más seguro</p>
+      <button class="hero-button">Explorar más</button>
+    </div>
+
+      <button class="carousel-button left" onclick="moveSlide(-1)">‹</button>
+      <div class="carousel-track">
+        <img src="img/carrusel01.jpg" class="carousel-image" alt="Slide 1">
+        <img src="img/carrusel02.jpg" class="carousel-image" alt="Slide 2">
+        <img src="img/carrusel03.jpg" class="carousel-image" alt="Slide 3">
+      </div>
+
+      <button class="carousel-button right" onclick="moveSlide(1)">›</button>
+    </div>
+    
+    <div class="carousel-dots"></div>
+  </section>
+
+ <div class="contenido-principal">
+  <section class="boxes">
+    <div class="box">
+      <h3>Historia del Observatorio</h3>
+      <p>Conoce la historia del Observatorio desde el 2016</p>
+    </div>
+    <div class="box">
+      <h3>Investigaciones</h3>
+      <p></p>
+      <a href="https://www.gob.pe/institucion/minjus/colecciones/3146-investigaciones" target="_blank" rel="noopener noreferrer">Ten acceso a nuestro más de 30 investigaciones</a>
+    </div>
+    <div class="box">
+      <h3>Revista Asuntos Criminológicos</h3>
+      <p>Lee y participa de nuestra revista institucional</p>
+    </div>
+    <div class="box">
+      <h3>Data sobre criminalidad</h3>
+      <p>Indicadores, gráficos, base de datos y dashboard sobre crimen</p>
+    </div>
+  </section>
+
+  <aside class="widget-sidebar">
+    <h3>Últimos eventos</h3><br>
+    <ul>
+      <li><a href="#">Congreso Nacional de Criminología</a></li> <br>
+      <li><a href="#">Congreso internacional de Observatorios</a></li><br>
+      
+      <li><a href="#">Presentación de la Revista Asuntos Criminológicos</a></li>
+
+    </ul>
+  </aside>
+</div>
+
+</section>
+
+<section>
+
+<div class="search-box">
+  <p class="search-box-title">¿Qué está pasando en tu localidad?</p>
+  <input type="text" class="search-input" placeholder="Escribe aquí tu búsqueda...">
+  <p class="search-box-description">Ingresa tu distrito, provincia o región </p>
+</div>
+
+</section>
+
+  <!-- Tus scripts -->
+  <script src="js/carrusel.js"></script>
+  <script src="js/botonHamburguesa.js"></script>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Observatorio Nacional de Política Criminal. Todos los derechos reservados.</p>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+</footer>
+
+</body>
+</html>
