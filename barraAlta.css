@@ -1,0 +1,83 @@
+/* Barra decorativa encima de la barra de navegación */
+.barraAlta {
+       background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+    color: white;
+    text-align: left;
+    padding: 3px 15px; /* Reducido el padding para hacerla más compacta */
+    font-size: 9px; /* Reducido el tamaño de la fuente para que todo se vea más pequeño */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* Para alinear los elementos de izquierda a derecha */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+/* Contenedor de los iconos sociales y la barra de búsqueda */
+.barraAlta a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px; /* Reducido el margen entre los iconos */
+    font-size: 16px; /* Reducido el tamaño de los iconos */
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Reducido el espacio entre la caja de búsqueda y el botón */
+    margin-left: 0;
+    margin-right: 15px; /* Reducido el margen derecho */
+}
+
+/* Caja de entrada de búsqueda */
+.search-input {
+    height: 24px; /* <<< Esta es la clave para achicarla */
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px); /* Efecto de difuminado */
+    color: white;
+    padding: 2px 8px; /* Reducido el padding para hacerla más baja */
+    border-radius: 10px; /* Bordes ligeramente más pequeños */
+    font-size: 12px; /* Reducido el tamaño de la fuente */
+    width: 50px; /* Reducido el ancho de la caja de búsqueda */
+    transition: all 0.3s ease;
+}
+
+/* Estilo cuando el campo de búsqueda está enfocado */
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2); /* Fondo más claro al enfocar */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 200px; /* Expande el campo al hacer foco */
+}
+
+/* Estilo del botón de búsqueda */
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px; /* Reducido el padding para hacerlo más compacto */
+    border-radius: 8px; /* Bordes más pequeños */
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.search-button:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo sutil al pasar el mouse */
+}
+
+/* Estilo de los iconos sociales en la barra */
+.icono-facebook, .icono-twitter, .icono-instagram, .icono-linkedin {
+    font-size: 18px; /* Reducido el tamaño de los iconos */
+    transition: transform 0.3s ease;
+}
+
+.icono-facebook:hover, .icono-twitter:hover, .icono-instagram:hover, .icono-linkedin:hover {
+    transform: scale(1.2); /* Efecto de agrandado al pasar el mouse */
+}
