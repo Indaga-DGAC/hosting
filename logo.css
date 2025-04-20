@@ -1,0 +1,14 @@
+/* Contenedor del logo */
+.logo {
+    text-align: left;  /* Centra el logo dentro de su contenedor */
+    margin-bottom: -10px;
+    margin: 0px;
+    padding: 0;
+}
+
+/* Imagen del logo */
+.logo img {
+    width: 120px;    /* Ajusta el tamaño del logo */
+    height: auto;    /* Mantiene la proporción del logo */
+    padding: 0;
+}
