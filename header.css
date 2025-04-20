@@ -1,0 +1,26 @@
+/* Archivo: header.css */
+.main-header {
+    background-color: var(--color-principal);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 20px;
+    transition: transform 0.3s ease;
+}
+
+.main-header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
