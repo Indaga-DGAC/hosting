@@ -1,0 +1,63 @@
+/* layout.css */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Contenedor principal para todo el sitio */
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima del viewport */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Área principal del contenido */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Opcional: asegura que cada sección tenga un padding y separe visualmente */
+section {
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .widget-sidebar {
+    display: none; /* o mover abajo del contenido */
+  }
+}
