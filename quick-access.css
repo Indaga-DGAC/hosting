@@ -1,0 +1,37 @@
+/* Archivo: quick-access.css */
+.quick-access {
+    padding: 2rem 1rem;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+.access-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.access-item {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.access-item:hover {
+    background-color: #e2e2e2;
+}
+.access-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+.access-item a {
+    display: block;
+    color: var(--color-principal);
+    font-weight: bold;
+    text-decoration: none;
+}
+.access-item a:hover {
+    text-decoration: underline;
+}
