@@ -1,0 +1,31 @@
+/* Estilos para el footer */
+.footer {
+  background-color: darkred; /* Dark Red */
+  color: white; /* Texto blanco */
+  padding: 2rem 0; /* Espaciado en la parte superior e inferior */
+  text-align: center; /* Centrar el contenido */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 0 20px; /* Espaciado interno en los laterales */
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8); /* Texto blanco con un poco de transparencia */
+}
+
+.footer-nav ul {
+  list-style: none; /* Quitar los puntos de la lista */
+  padding: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 0 15px; /* Espaciado entre*
