@@ -34,7 +34,7 @@
 
 .carousel-image {
   flex: 0 0 100%; /* Cada imagen ocupa todo el ancho del container */
-  height: 600px;
+  height: 800px;
   object-fit: cover;
   display: block;
 }
