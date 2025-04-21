@@ -19,7 +19,7 @@
 
 .carousel-container {
   width: 100%; /* Menos de 100% para que margin auto funcione */
-  max-width: 460px; /* No excederá 1200px */
+  max-width: none; /* No excederá 1200px */
   margin: 0 auto; /* Centrado horizontal */
   position: relative;
   overflow: hidden;
