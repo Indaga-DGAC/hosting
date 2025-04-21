@@ -80,3 +80,37 @@
   color: #003f7f;
   text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+  .contenido-principal {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .boxes {
+    flex: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%; /* Una caja por fila en móviles */
+  }
+
+  .widget-sidebar {
+    margin-top: 20px;
+    width: 100%;
+    border-left: none;
+    border-top: 3px solid darkred;
+  }
+
+  .widget-sidebar:hover {
+    border-left: none;
+    border-top: 3px solid #a30000;
+    transform: none; /* Sin efecto de elevación en móviles */
+  }
+}
+
+
