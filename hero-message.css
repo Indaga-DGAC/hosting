@@ -3,7 +3,7 @@
 /* Versión de escritorio (sin cambios) */
 .hero-message {
     position: absolute;
-    bottom: 80px;
+    bottom: 150px;
     left: 25%;
     transform: translateX(-50%);
     background-color: rgba(139, 0, 0, 0.6); /* Rojo con transparencia */
